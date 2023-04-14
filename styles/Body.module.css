@@ -1,0 +1,169 @@
+.main_div{
+    display: flex;
+    padding-inline: 14rem;
+    gap:10px;
+    /* background-color: black ; */
+}
+
+.main_div section{
+    width:50%
+}
+
+.main_div .section_part{
+    display:flex;
+
+}
+
+.section_1{
+    text-align: left;
+    display: flex; 
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section_1 h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: -12px;
+}
+
+.section_1 h2 {
+    font-size: 60px;
+    color:  rgb(255, 102, 0);
+    margin-top: 0px;
+}
+
+.section_1 p {
+    color: white;
+    font-size: large;
+    margin-top: -40px;
+    max-width: 85%;
+}
+
+
+.section_1 .earn_main{
+    background-color: rgb(255, 102, 0);
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;  
+    padding: 10px;
+    margin-top: 12px;
+}
+
+.section_2{
+    /* height:300px;
+    width: 300px;
+    background-color: grey;
+    opacity:0.6; */
+    position: relative;
+    z-index: 0;
+}
+
+.section_2 .main_form .backcolor1{
+    position:absolute;
+    height:200px;
+    width:200px;
+    border-radius: 36% 64% 27% 73% / 45% 28% 72% 55% ;
+    background: rgb(255, 102, 0);
+    /* top:-10px; */
+    left:60px;
+    filter:blur(80px);
+    z-index: 2px;
+}
+
+.section_2 .main_form .backcolor2{
+    position: absolute;
+    height:200px;
+    width:200px;
+    border-radius: 76% 24% 66% 34% / 42% 64% 36% 58%   ;
+    background: radial-gradient(ellipse at top, #e66465, transparent),radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+    bottom:-120px;
+    right:3px;
+    filter:blur(80px);
+}
+
+.main_form  .form_div{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.form_div .signup_heading{
+    font-size: 35px;
+    font-weight: 80px;
+    color:white;
+    position:absolute;
+    top:0;
+}
+
+.form_div .main_form{
+    padding-top:55px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height:25rem;
+    width: 25rem;
+    background-color: rgba(49, 48, 48, 0.2);
+    border-radius: 10px;
+}
+
+.main_form .forminput_div{
+    position:relative
+}
+
+.main_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main_form .forminput_div input{
+    height:40px;
+    width: 100%;
+    border-radius: 8px;
+    border-color: white;
+    background-color: rgba(49, 48, 48, 0.2);
+    color: white;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+.main_div .forminput_divPassword input{
+    padding-right: 35px;
+}
+
+
+.forminput_div input::placeholder {
+    color: white;
+
+}
+
+.forminput_div .icon{
+    height:25px;
+    width: 20px;
+    position:absolute;
+    top:7px;
+    left: 5px;
+    color: white;
+}
+
+.forminput_div .password_icon{
+    left:300px;
+    cursor: pointer;
+}
+
+
+.forminput_div span{
+    position:absolute;
+    top:8px;
+    left:30px;
+    color: white;
+}
+
+.forminput_div input:focus{
+    
+}

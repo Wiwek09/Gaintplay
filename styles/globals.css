@@ -13,7 +13,7 @@ a {
 
 * {
   box-sizing: border-box;
-}
+}button { all: unset; }
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -21,6 +21,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    /* background: rgb(48, 43, 43); */
   }
 }

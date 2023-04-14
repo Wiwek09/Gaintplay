@@ -1,0 +1,106 @@
+.nav{
+    background-color: rgb(19, 18, 18);
+    height: 120px;
+    min-height: 70px;
+    position: sticky;
+    z-index: 10;
+
+}
+
+.main{
+    display: flex;
+    padding-inline: 15rem;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.nav img{
+    height: 5rem;
+    border-radius: 26px;
+}
+
+.main h1{
+    color: white;
+    font-size: x-large;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.main h1:hover{
+    color: rgb(255, 102, 0);
+    transition: ease-in 0.2s ;
+}
+
+.icon_container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav p{
+    font-size: large;
+    color: white;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.main .icons{
+    display:flex;
+    font-size: 20px;
+    color: white;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px; 
+    align-items: center;
+}
+
+.earn,
+.cashout,
+.leaderboard,
+.reward{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding:10px 15px
+}
+
+.earn:hover,
+.cashout:hover,
+.leaderboard:hover,
+.reward:hover{
+    background-color: rgb(51, 49, 49);
+    border-radius: 10px;
+    transition: ease-out 1sec;
+}
+
+.main_sign{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    padding:30px 15px;
+    
+}
+
+.signin{ 
+    background-color: rgba(128, 128, 128,0.4);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    
+}         
+
+.signup{
+    background-color: rgb(255, 102, 0);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    padding: 10px;
+    
+}
+
+.btn_text{
+   font-size: large;
+   color: white;
+}
+
