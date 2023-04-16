@@ -8,9 +8,6 @@ type Props = {}
 
 const Navbar = (props: Props) => {
   
-
- 
-
   return (
     <>
     <nav className={styles.nav} >

@@ -2,7 +2,7 @@
     display: flex;
     padding-inline: 14rem;
     gap:10px;
-    /* background-color: black ; */
+    background-color: rgb(19, 18, 18);
 }
 
 .main_div section{
@@ -40,7 +40,6 @@
     max-width: 85%;
 }
 
-
 .section_1 .earn_main{
     background-color: rgb(255, 102, 0);
     border-radius: 10px;
@@ -53,10 +52,6 @@
 }
 
 .section_2{
-    /* height:300px;
-    width: 300px;
-    background-color: grey;
-    opacity:0.6; */
     position: relative;
     z-index: 0;
 }
@@ -67,7 +62,6 @@
     width:200px;
     border-radius: 36% 64% 27% 73% / 45% 28% 72% 55% ;
     background: rgb(255, 102, 0);
-    /* top:-10px; */
     left:60px;
     filter:blur(80px);
     z-index: 2px;
@@ -78,13 +72,13 @@
     height:200px;
     width:200px;
     border-radius: 76% 24% 66% 34% / 42% 64% 36% 58%   ;
-    background: radial-gradient(ellipse at top, #e66465, transparent),radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+    background: rgb(255, 102, 0);
     bottom:-120px;
     right:3px;
     filter:blur(80px);
 }
 
-.main_form  .form_div{
+.main_form .form_div{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -105,14 +99,11 @@
     padding-top:55px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
     height:25rem;
-    width: 25rem;
+    width: 27rem;
     background-color: rgba(49, 48, 48, 0.2);
-    border-radius: 10px;
-}
-
-.main_form .forminput_div{
-    position:relative
+    border-radius: 20px;
 }
 
 .main_form form{
@@ -122,6 +113,10 @@
     color: white;
 }
 
+.main_form .forminput_div{
+    position:relative
+}
+
 .main_form .forminput_div input{
     height:40px;
     width: 100%;
@@ -129,19 +124,43 @@
     border-color: white;
     background-color: rgba(49, 48, 48, 0.2);
     color: white;
+    border-width: thin;
     padding-left: 30px;
     font-size: 18px;
+    outline: none;
 }
 
 .main_div .forminput_divPassword input{
     padding-right: 35px;
 }
 
-
-.forminput_div input::placeholder {
-    color: white;
-
+.forminput_div input:focus {
+    border: 2px solid darkorange;
 }
+
+.forminput_div input:placeholder-shown ~ .inner_input{
+  
+}
+
+
+.main_form .forminput_div .inner_input{
+    position:absolute;
+    top:8px;
+    left:30px;
+    z-index: -1;
+}
+ 
+.forminput_div input:focus ~ .inner_input{
+    top: -25px;
+    color: rgb(255, 102, 0);
+    left:12px;
+    transition: ease-in 0.2s;
+}
+
+.forminput_div input:focus ~ .icon{
+    color: rgb(255, 102, 0);
+}
+
 
 .forminput_div .icon{
     height:25px;
@@ -154,21 +173,30 @@
 
 .forminput_div .password_icon{
     top:10px;
-    left:290px;
+    left:20rem;
     cursor: pointer;
 }
 
-
-.forminput_div span{
+/* .forminput_div span{
     position:absolute;
     top:8px;
     left:30px;
     color: white;
+} */
+
+.forminput_div .error_div{
+    color: red;
+    position: absolute;
+    font-size: small;
+    margin-top: 2px;
+    right:0px;
+    display: flex;
+    align-items: center;
+    gap:4px;
 }
 
-
 .terms p{
-    font-size: 14px;
+    font-size: 12px;
     margin-top: -2px;
 }
 
@@ -181,6 +209,9 @@
 .sign{
     display: flex;
     gap:20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
 }
 
 .sign .button1{
@@ -189,29 +220,34 @@
     background-color: white;
     padding: 10px;
     color: black;
-    /* text-align: center; */
-    /* display: inline-block; */
-    /* vertical-align: middle; */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     font-weight: 600;
-    margin-top: -10px;
+    /* margin-top: ; */
+    cursor:pointer;
 }
+
 .sign .button2{
-    height:12px;
-    width:100px;
+    height:38px;
+    width:200px;
     background-color: white;
     padding: 10px;
     color: black;
+    display: flex;
+    gap:4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
 }
-
 
 .sign  .middle{
      display: flex;
      flex-direction: column;
-     margin-top: -22px;
+     gap:2px;
 }
 
 .middle .middle_OR{

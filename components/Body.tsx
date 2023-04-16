@@ -2,8 +2,9 @@ import React,{useState} from 'react'
 import styles from '../styles/Body.module.css'
 import {BsPersonFill} from 'react-icons/Bs'
 import {MdEmail} from 'react-icons/Md'
-import {AiFillEye,AiFillEyeInvisible} from 'react-icons/Ai'
+import {AiFillEye,AiFillEyeInvisible,AiFillWarning} from 'react-icons/Ai'
 import {RiLockPasswordFill} from 'react-icons/Ri'
+import {FcGoogle} from 'react-icons/Fc'
 import Link from 'next/link'
 import { useForm } from "react-hook-form";
 
@@ -49,33 +50,63 @@ const Body = (props: Props) => {
                   <div className={styles.form_div} >
                     <div className={styles.signup_heading} >Sign Up</div>
                     <div className={styles.main_form} >
-                      <form onSubmit={onSubmit} method="post" >
+                      <form onSubmit={onSubmit}  >
                         <div className={`${styles.forminput_div}`} >
-                           <input type='text' >
-                           </input>
-                           <BsPersonFill className={styles.icon} />
-                           {/* <span>Name</span> */}
+                           <input type='text' placeholder='' {...register("name",{required:true})} >
+                           </input>                         
+                            {
+                            errors?.email?.type === "required" && 
+                            <div className={styles.error_div} >
+                            <AiFillWarning/>
+                            <span>Please enter your name</span>   </div>                        
+                            }                           
+                          <BsPersonFill className={styles.icon} />
+                          <div className={styles.inner_input} >
+                           <span>Name</span>
+                           </div>
                         </div>
                         <div className={styles.forminput_div} >
-                           <input type='text' {...register("email",{required:true,pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/})} id='email' >
+                           <input type='text' placeholder='' {...register("email",{required:true,pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/})} id='email' >
                            </input>
-                           {
-                            errors?.email?.type === "required" && <p className="text-red-600" >This field is required</p>
+                            {
+                            errors?.email?.type === "required" &&
+                            <div className={styles.error_div} >
+                            <AiFillWarning/> 
+                            <span>Please enter your email</span></div>
                             }
                             {
-                            errors?.email?.type === "pattern" && <p className="text-red-600" >Not valid email</p>
+                            errors?.email?.type === "pattern" && 
+                            <div className={styles.error_div} >
+                            <AiFillWarning/>
+                            <span>Please enter valid email</span></div>
                             }
                            <MdEmail className={styles.icon} />
-                           {/* <span>Email Address</span> */}
+                           <div className={styles.inner_input} >
+                           <span>Email Address</span>
+                           </div>
                         </div>
                         <div className={`${styles.forminput_div} ${styles.forminput_divPassword} `} >
-                           <input type={open?"text":"password"} >
+                           <input type={open?"text":"password"} placeholder='' {...register("password",{required:true,maxLength:8,pattern:/(?=.*[!@#$%^&*])/})} >
                            </input>
+                           {
+                            errors?.password?.type === "required" &&
+                            <div className={styles.error_div} >
+                            <AiFillWarning/>
+                            <span>Please enter your password</span></div>
+                           }
+                           {
+                            errors?.password?.type === "maxLength" || errors?.password?.type === "pattern"  &&
+                            <div className={styles.error_div} >
+                            <AiFillWarning/>
+                            <span>Miniumum 8 characters with atleast one special character</span></div>
+                           }
                            <RiLockPasswordFill className={styles.icon} />
                            <div className={`${styles.icon} ${styles.password_icon}`} onClick={toggle} >
                            {open? (<AiFillEye/>) : (<AiFillEyeInvisible/>)}
                            </div>
-                           {/* <span>Password</span> */}
+                           <div className={styles.inner_input} >
+                           <span>Password</span>
+                           </div>
                         </div>
                         <div className={styles.terms} >
                           <p>By signing up you agree to our <span><Link href={"https://gaintplay.com/terms"} >terms and conditions</Link></span> as well as <span><Link href={"https://gaintplay.com/privacy"} >Privacy Policy</Link></span>. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
@@ -88,16 +119,17 @@ const Body = (props: Props) => {
                             <span className={styles.middle_OR}>|</span>
                             <span>OR</span>
                             <span className={styles.middle_OR} >|</span>
+                           </div>                  
+                           <Link href={"https://apis.google.com/js/platform.js"} >
+                           <div className={styles.button2} >
+                            <FcGoogle />       
+                            <span>Continue with Google</span>                        
                            </div>
-                           <div>
-                           <button className={styles.button2} >
-                            <span>Continue with </span>
-                           </button>
-                           </div>
+                           </Link>
                         </div>
                       </form>
                     </div>
-                  </div>
+                  </div>  
               </div>
             </section>
         </div>
