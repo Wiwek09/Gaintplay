@@ -64,7 +64,6 @@
     background: rgb(255, 102, 0);
     left:60px;
     filter:blur(80px);
-    z-index: 2px;
 }
 
 .section_2 .main_form .backcolor2{
@@ -114,7 +113,8 @@
 }
 
 .main_form .forminput_div{
-    position:relative
+    position:relative;
+    z-index: 1;
 }
 
 .main_form .forminput_div input{
@@ -139,13 +139,13 @@
 }
 
 .forminput_div input:placeholder-shown ~ .inner_input{
-  
+    top:8px;
+    left:30px;
 }
-
 
 .main_form .forminput_div .inner_input{
     position:absolute;
-    top:8px;
+    top:-25px;
     left:30px;
     z-index: -1;
 }
@@ -160,7 +160,6 @@
 .forminput_div input:focus ~ .icon{
     color: rgb(255, 102, 0);
 }
-
 
 .forminput_div .icon{
     height:25px;

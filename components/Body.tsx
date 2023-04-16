@@ -52,7 +52,7 @@ const Body = (props: Props) => {
                     <div className={styles.main_form} >
                       <form onSubmit={onSubmit}  >
                         <div className={`${styles.forminput_div}`} >
-                           <input type='text' placeholder='' {...register("name",{required:true})} >
+                           <input type='text' placeholder=' ' {...register("name",{required:true})} >
                            </input>                         
                             {
                             errors?.email?.type === "required" && 
@@ -66,7 +66,7 @@ const Body = (props: Props) => {
                            </div>
                         </div>
                         <div className={styles.forminput_div} >
-                           <input type='text' placeholder='' {...register("email",{required:true,pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/})} id='email' >
+                           <input type='text' placeholder=' ' {...register("email",{required:true,pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/})} id='email' >
                            </input>
                             {
                             errors?.email?.type === "required" &&
@@ -86,7 +86,7 @@ const Body = (props: Props) => {
                            </div>
                         </div>
                         <div className={`${styles.forminput_div} ${styles.forminput_divPassword} `} >
-                           <input type={open?"text":"password"} placeholder='' {...register("password",{required:true,maxLength:8,pattern:/(?=.*[!@#$%^&*])/})} >
+                           <input type={open?"text":"password"} placeholder=' ' {...register("password",{required:true,maxLength:8,pattern:/(?=.*[!@#$%^&*])/})} >
                            </input>
                            {
                             errors?.password?.type === "required" &&

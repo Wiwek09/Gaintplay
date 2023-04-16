@@ -34,6 +34,7 @@ const Earnings = ({el}: Props) => {
             </span>
           </div>
         </button>
+        {/* <div className={styles.hover_btn} > */}
     </div>
   )
 }
