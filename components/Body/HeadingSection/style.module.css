@@ -1,0 +1,20 @@
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    text-align: center;
+ }
+ 
+ .text h1{
+    font-size: 45px;
+    color:white;
+    opacity:0.8; 
+    margin-bottom: 3px;
+ }
+ 
+ .text p{
+    color:grey;
+    margin-top: -1px;
+    font-size: 20px;
+ }

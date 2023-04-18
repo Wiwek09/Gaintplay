@@ -19,7 +19,7 @@ const Complete = (props: Props) => {
  }
 
   return (
-    <div className={ `${hide? styles.hide : ""} ${styles.parent}`} >
+    <div  className={ `${hide? styles.hide : ""} ${styles.parent}`} >
       <div className={ !hide ? styles.main : styles.hide_main} >
        {data.map((el) =>{
           return <Earnings el={el} />
@@ -40,7 +40,6 @@ const Complete = (props: Props) => {
         </button>
         )
         }
-    
       </div>
     </div>
   )

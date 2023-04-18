@@ -8,8 +8,10 @@ export default function Home() {
   return (
     <div className={styles.container}>  
       <Head><title>Gaintplay</title></Head>
+      <div className={styles.position} >
        <Navbar/>
-       <Complete/>
+       <Complete />
+       </div>
        <Body/>
     </div>
   )

@@ -7,7 +7,6 @@ import {GiTrophy,GiAlliedStar} from 'react-icons/Gi'
 type Props = {}
 
 const Navbar = (props: Props) => {
-  
   return (
     <>
     <nav className={styles.nav} >

@@ -7,6 +7,8 @@ import {RiLockPasswordFill} from 'react-icons/Ri'
 import {FcGoogle} from 'react-icons/Fc'
 import Link from 'next/link'
 import { useForm } from "react-hook-form";
+import Heading_Section from './Body/HeadingSection/Heading_Section'
+import Box_Section from './Body/Box/Box_Section'
 
 type Props = {}
 
@@ -33,7 +35,8 @@ const Body = (props: Props) => {
   }
 
   return (
-    <div className={styles.main_div} >
+    <div className={styles.body_div} >
+     <div className={styles.main_div} >
         <div className={styles.section_part} >
             <section className={styles.section_1} >
              <h1>Earn Money by</h1>
@@ -134,6 +137,31 @@ const Body = (props: Props) => {
             </section>
         </div>
     </div>
+    {/*  */}
+    <div className={styles.second_div} >
+        <div className={styles.text_div}>      
+            <h1>Get Paid</h1>
+            <p>Reedem your points for cash, Khalti and gifts cards .</p>
+        </div>
+        <div className={styles.logo_div}>
+          <div className={styles.logo1} >
+            <img  src='/paypal-icon.svg' /> 
+          </div>
+          <div className={styles.logo2} >
+            <img src='/khalti.png' />
+          </div>
+          <div className={styles.logo3} >
+            <img src='/mastercard.svg' />
+          </div>
+        </div>
+    </div>
+    <div className={styles.third_div} >
+      <div className={styles.distance}></div>
+      <Heading_Section/>
+      <div className={styles.distance}></div>
+      <Box_Section/>
+    </div>
+  </div>
   )
 }
 
