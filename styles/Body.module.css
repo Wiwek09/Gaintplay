@@ -1,18 +1,17 @@
 .body_div{
-    padding-inline: 14rem;
-    width:100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 80rem;
+    margin: auto;
 }
 
 /* First Div Section */
 .main_div{
     display: flex;
-    gap:10px;
+    justify-content: space-between;
     background-color: rgb(19, 18, 18);
 }
 
-.main_div section{
-    width:50%
-}
 
 .main_div .section_part{
     display:flex;
@@ -258,7 +257,7 @@
 /* Second Div Section */
 .second_div{
     height:150px;
-    width:90%;
+    width:100%;
     display:flex;
     background-color: #1c1c1c;
     /* margin-right: 20px; */
@@ -272,12 +271,15 @@
     width:40%;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,102,0,1) 0%, rgba(46,27,3,1) 76%);
     color:white;
-    padding:10px 20px;
+    padding:7px 20px;
     z-index:10;
+    display: flex;
+    flex-direction: column;
 }
 
 .second_div .text_div > p{
     opacity: 0.8;
+    margin-top: -10px;
 }
 
 .second_div .text_div::before{
@@ -364,6 +366,26 @@
 
  /* Heading Section */
 
- .third_div .distance{
+.third_div .distance{
     margin-top: 3rem;
- }
+}
+
+.third_div .box_div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+ .third_div .box_last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.box_last .box_gap{
+    height:4rem;
+    width:2px;
+    background-color: grey;
+    text-align: center;
+}

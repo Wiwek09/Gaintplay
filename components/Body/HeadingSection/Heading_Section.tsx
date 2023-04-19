@@ -1,13 +1,15 @@
 import React from 'react'
 import styles from './style.module.css'
 
-type Props = {}
+type Props = {heading:string,
+              subText:string         
+              }
 
-const Heading_Section = (props: Props) => {
+const Heading_Section = ({heading, subText}: Props) => {
   return (
     <div className={styles.text}>
-       <h1>Here's how you do it</h1>
-       <p>Earning money in gaintplay is easy  as it gets.</p>
+       <p>{heading}</p>
+       <p>{subText}</p>
     </div>
   )
 }

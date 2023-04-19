@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { useForm } from "react-hook-form";
 import Heading_Section from './Body/HeadingSection/Heading_Section'
 import Box_Section from './Body/Box/Box_Section'
+import Box_last from './Body/Box-Last/Box_last'
 
 type Props = {}
 
@@ -157,9 +158,36 @@ const Body = (props: Props) => {
     </div>
     <div className={styles.third_div} >
       <div className={styles.distance}></div>
-      <Heading_Section/>
+      <Heading_Section heading={"Here's how you do it"} subText={"Earning money in gaintplay is easy as it gets ."} />
+
       <div className={styles.distance}></div>
-      <Box_Section/>
+
+        <div className={styles.box_div} >
+           <Box_Section heading={"Do Task"} subtext1={"Fill in surveys,"}    subtext2={"play games and more"} number={"1"} buttontxt={"View    Offers"} color={'orange'} bgColor={'bgOrange'} />
+           <div>
+           <img src='/lines_1.svg' />
+           </div>
+           <Box_Section heading={"Earn Coins"} subtext1={"1000 coins = $1 USD"}    subtext2={"Get Rewarded for your time"} number={"2"} buttontxt=   {"Start Earning"} color={'green'} bgColor={'bgGreen'}  />
+           <div>
+           <img src='/lines_2.svg' />
+           </div>
+           <Box_Section heading={"Get Paid"} subtext1={"Reedeem your coins for    cash,"} subtext2={"khalti or bhukka"} number={"3"} buttontxt={"View    Cashout Options"} color={'blue'} bgColor={'bgBlue'}  />
+
+        </div>
+     <div className={styles.distance}></div>
+
+     <Heading_Section heading={"Numbers dont lie"} subText={"There's a reason why our users love us !!"} />
+     
+     <div className={styles.distance}></div>
+
+     <div className={styles.box_last} >
+      <Box_last heading={"0h 25m 21s"} text={"Average Time until first cashout"} color={["red","orange","yellow"]}/>
+      <div className={styles.box_gap} ></div>
+      <Box_last heading={"$2"} text={"Average earning per user"} color={["red","orange","yellow"]} />
+      <div className={styles.box_gap} ></div>
+      <Box_last heading={"$102,690+"} text={"Total USD earned on Gaintplay"} color={["red","orange","yellow"]} />
+     </div>
+     
     </div>
   </div>
   )

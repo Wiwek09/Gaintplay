@@ -1,22 +1,88 @@
 .main_div{
-    height:12rem;
-    width:20rem;
-    background-color: rgb(66, 64, 64);
+    height:13rem;
+    width:21rem;
+    background-color: rgb(37, 36, 36,0.8);
     border-radius:25px;
-    padding: 10px 20px;
+    padding:1px 25px;
     position: relative;
+
 }
 
-.main_div h1{
-    color:bisque;
-    font-size: 30px;
+.main_div section > p:first-child{
+    font-size: 40px;
+    margin-top: 6px;
+    font-weight: 700;
+    opacity:0.8;
+    
 }
 
-.main_div section > div{
+#orange{
+    color:rgb(255, 102, 0);
+
+}
+
+#bgOrange{
+    background-color:rgb(255, 102, 0);
+
+}
+
+#red{
+    color:red;
+
+}
+
+#bgRed{
+    background-color:red;
+
+}
+
+#green{
+    color:rgb(2, 190, 2);
+
+}
+
+#bgGreen{
+    background-color:rgb(2, 190, 2);
+
+}
+
+#blue{
+    color:rgba(2, 120, 230, 0.795);
+    
+}
+
+#bgBlue{
+    background-color:rgba(2, 120, 230, 0.795);
+   
+}
+
+.main_div section :nth-child(2){
+    color:white;
+    font-size: 20px;
+    margin-top: -20px;
+    z-index:10;
+}
+
+.main_div section .number{
     position: absolute;
-    font-size: 100px;
-    top:-20px;
-    right:4px;
-    color:rgb(255, 255, 255,0.2);
+    font-size: 130px;
+    top:-30px;
+    right:17px;
+    color:rgba(71, 68, 68, 0.3);
     font-weight: 800;
+    z-index:0;
 }
+
+.main_div .link{
+    height:35px;
+    width:100%;
+    color:white;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 10px;
+    display: block;
+    font-weight: 700;
+    opacity:0.8;
+}
+
+
