@@ -2,10 +2,11 @@
     height:7rem;
     width:21rem;
     background:rgba(255,255,255,0.4);
-    border-radius:25px;
+    border-radius:10px;
     padding:6px 50px;
     text-align: center;
     position:relative;
+    overflow: hidden;
 }
 
 .main_div p{
@@ -29,15 +30,99 @@
     top:3rem;
     left:-3;
     filter: blur(32px);
-    opacity: 0.7;
+    overflow: hidden;
+    z-index: 0;
+    /* opacity: 0.7; */
+}
+
+.main_div:hover{
+    transition-duration: 2s ease-in;
+}
+
+#orange{
+    background-color: rgb(255, 123, 0);
+    top:2rem;
+    left:1rem;
+}
+
+.main_div:hover > #orange{
+    top:2rem;
+    left:2rem;
 }
 
 #red{
-    background-color: red;
-}
-#orange{
-    background-color: orange;
+    background-color: rgb(235, 74, 0);
     top:1rem;
+    left:9rem;
+}
+
+.main_div:hover > #red{
+    top:2rem;
+    
+
+}
+
+#yellow{
+    background-color: rgb(245, 209, 6);
+    left:16rem;
+}
+
+.main_div:hover #yellow{
+    left:14rem;
+    top:3rem;
+}
+
+#green1{
+    background-color: rgb(3, 151, 3);
+    top:3rem;
+    left:2rem;
+}
+
+.main_div:hover #green1{
+    top:1rem;
+}
+
+#green2{
+    background-color: rgb(160, 216, 6);
+    top:0;
     left:8rem;
 }
+
+.main_div:hover #green2{
+    top:1rem;
+}
+
+#blue1{
+    background-color: rgba(0, 84, 163, 0.822);
+    top:0;
+    left:0;
+}
+
+.main_div:hover #blue1{
+    top:3px;
+    left:3rem;
+}
+
+#blue2{
+    background-color: rgba(0, 85, 165, 0.822);
+    top:0;
+    left:9rem;
+}
+
+.main_div:hover #blue2{
+    top:2rem;
+    left:8rem
+}
+
+#blue3{
+    background-color: rgba(0, 79, 153, 0.822);
+    top:4rem;
+    left:15rem;
+}
+
+.main_div:hover #blue3{
+    top:3rem;
+    left:17rem;
+}
+
 

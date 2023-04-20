@@ -4,7 +4,7 @@ import styles from './style.module.css'
 type Props = {heading:string,
               text:string,
               color:Array<string>
-             }
+              }
 
 const Box_last = ({heading,text,color}: Props) => {
   return (

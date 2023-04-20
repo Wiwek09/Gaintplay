@@ -10,6 +10,7 @@ import { useForm } from "react-hook-form";
 import Heading_Section from './Body/HeadingSection/Heading_Section'
 import Box_Section from './Body/Box/Box_Section'
 import Box_last from './Body/Box-Last/Box_last'
+import FAQ from './Body/FAQ-Section/FAQ'
 
 type Props = {}
 
@@ -36,6 +37,8 @@ const Body = (props: Props) => {
   }
 
   return (
+
+  <div className={styles.container} >
     <div className={styles.body_div} >
      <div className={styles.main_div} >
         <div className={styles.section_part} >
@@ -181,15 +184,21 @@ const Body = (props: Props) => {
      <div className={styles.distance}></div>
 
      <div className={styles.box_last} >
-      <Box_last heading={"0h 25m 21s"} text={"Average Time until first cashout"} color={["red","orange","yellow"]}/>
+      <Box_last heading={"0h 25m 21s"} text={"Average Time until first cashout"} color={["orange","yellow","red"]}/>
       <div className={styles.box_gap} ></div>
-      <Box_last heading={"$2"} text={"Average earning per user"} color={["red","orange","yellow"]} />
+      <Box_last heading={"$2"} text={"Average earning per user"} color={["green1","green2","yellow"]} />
       <div className={styles.box_gap} ></div>
-      <Box_last heading={"$102,690+"} text={"Total USD earned on Gaintplay"} color={["red","orange","yellow"]} />
+      <Box_last heading={"$102,690+"} text={"Total USD earned on Gaintplay"} color={["blue1","blue2","blue3"]} />
      </div>
-     
+     <div className={styles.backcolor1} />
+     <div className={styles.backcolor2} />
     </div>
-  </div>
+
+
+
+    
+
+</div>
   )
 }
 
