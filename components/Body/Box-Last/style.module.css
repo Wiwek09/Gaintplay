@@ -32,7 +32,7 @@
     filter: blur(32px);
     overflow: hidden;
     z-index: 0;
-    /* opacity: 0.7; */
+    opacity: 0.8;
 }
 
 .main_div:hover{

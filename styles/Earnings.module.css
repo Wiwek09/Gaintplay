@@ -55,7 +55,7 @@
 .text{
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding-inline: 10px;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
     
 }
 
-.btn_user:hover > div.text > .type{
+.btn_user:hover > .text > .type{
     opacity: 1;
 } 
 

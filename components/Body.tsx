@@ -10,7 +10,8 @@ import { useForm } from "react-hook-form";
 import Heading_Section from './Body/HeadingSection/Heading_Section'
 import Box_Section from './Body/Box/Box_Section'
 import Box_last from './Body/Box-Last/Box_last'
-import FAQ from './Body/FAQ-Section/FAQ'
+import Accordion from './Body/QuestionBox/Accordion'
+
 
 type Props = {}
 
@@ -37,7 +38,7 @@ const Body = (props: Props) => {
   }
 
   return (
-
+  <div className='body' >
   <div className={styles.container} >
     <div className={styles.body_div} >
      <div className={styles.main_div} >
@@ -193,11 +194,18 @@ const Body = (props: Props) => {
      <div className={styles.backcolor1} />
      <div className={styles.backcolor2} />
     </div>
-
-
-
-    
-
+  </div>
+</div>
+{/* Section {Grey Background} */}
+ <section className={styles.faq_section}  >
+   <div className={styles.faq} >
+      <Heading_Section heading={"FAQ"} subText={"Users frequently as these questions"} />
+   <div className='' ></div>
+   <div>
+      <Accordion/>
+   </div>
+   </div>
+ </section>
 </div>
   )
 }

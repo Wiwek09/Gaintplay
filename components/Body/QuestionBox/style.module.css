@@ -1,0 +1,15 @@
+.accordion_div{
+    height:3rem;
+    width:100%;
+    padding: 10px 15px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    cursor: pointer;
+}
+
+.accordion_div .heading_div{
+    display: flex;
+    justify-content: space-between;
+    justify-items: end;
+    align-items: center;
+}

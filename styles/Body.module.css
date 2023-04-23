@@ -2,11 +2,13 @@
     height: 100%;
     width:100%;
     background-color: rgb(19, 18, 18);
+    position: relative;
+    overflow: hidden;
 }
 
 .body_div{
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     max-width: 80rem;
     margin: auto;
     background-color: rgb(19, 18, 18);
@@ -291,7 +293,7 @@
 .second_div .text_div::before{
     background-color:#1c1c1c;
     content:"";
-    height:250px;
+    height:300px;
     position:absolute;
     left:500px;
     top:-10px;
@@ -403,18 +405,36 @@
     width:200px;
     border-radius: 36% 64% 27% 73% / 45% 28% 72% 55% ;
     background: rgb(255, 102, 0);
-    top:100rem;
+    top:90rem;
     left:-5rem;
     filter:blur(80px);
+    overflow: hidden;
 }
 
 .third_div .backcolor2{
     position: absolute;
     height:200px;
     width:200px;
+    /* max-width: fit-content; */
     border-radius: 76% 24% 66% 34% / 42% 64% 36% 58%   ;
     background: rgb(255, 102, 0);
     top:80rem;
     right:-5rem;
     filter:blur(80px);
+    /* overflow:hidden; */
+    
+}
+
+/* FAQ Section */
+.faq_section{
+    width:100%;
+    height:100%;
+    background-color: rgb(0, 0, 0,0.9);
+}
+
+.faq_section .faq{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    max-width: 80rem;
+    margin: auto;
 }
