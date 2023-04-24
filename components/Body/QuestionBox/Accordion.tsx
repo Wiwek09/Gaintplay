@@ -1,21 +1,32 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from './style.module.css'
 import {IoIosArrowUp,IoIosArrowDown} from 'react-icons/Io'
 
 
-type Props = {}
+type Props = {item:data}
 
-const Question_Box = (props: Props) => {
+type data = {
+            "title":string,
+            "answer":string,
+            "date":string
+}
+
+const Question_Box = ({item}: Props) => {
+  const {title,answer,date} = item
+  const [click,onClick] = useState(false)
+
   return (
-    <div >
-        <button className={styles.accordion_div} >
-          <div className={styles.heading_div} >
-            <p>What do you want to hear</p>
+    <div className={styles.accordion_div} >
+        <button className={!click? `${styles.heading_div}` : `${styles.headingClick_div}`} onClick={()=> onClick(!click)}>
+            <p>{title}</p>
             <span>
-            <IoIosArrowUp/>
+            {!click? <IoIosArrowUp/> : <IoIosArrowDown/> } 
             </span>
-          </div>
         </button>
+        {click && <div className={styles.content} >
+            <div>{answer}</div>
+            <div>{date}</div>
+         </div>}
     </div>
   )
 }

@@ -10,8 +10,7 @@ import { useForm } from "react-hook-form";
 import Heading_Section from './Body/HeadingSection/Heading_Section'
 import Box_Section from './Body/Box/Box_Section'
 import Box_last from './Body/Box-Last/Box_last'
-import Accordion from './Body/QuestionBox/Accordion'
-
+import Complete_Accordion from './Body/QuestionBox/Complete_Accordion'
 
 type Props = {}
 
@@ -200,10 +199,7 @@ const Body = (props: Props) => {
  <section className={styles.faq_section}  >
    <div className={styles.faq} >
       <Heading_Section heading={"FAQ"} subText={"Users frequently as these questions"} />
-   <div className='' ></div>
-   <div>
-      <Accordion/>
-   </div>
+      <Complete_Accordion/>
    </div>
  </section>
 </div>

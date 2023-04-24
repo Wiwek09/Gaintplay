@@ -1,15 +1,55 @@
 .accordion_div{
-    height:3rem;
     width:100%;
-    padding: 10px 15px;
-    background-color: rgb(43, 42, 42);
     color: white;
-    cursor: pointer;
+    font-weight: 600;
+    display:flex;
+    flex-direction: column;
 }
 
 .accordion_div .heading_div{
+    height:2rem;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: rgb(43, 42, 42);
     display: flex;
     justify-content: space-between;
     justify-items: end;
     align-items: center;
+    cursor: pointer;
+    opacity:0.8;
+}
+
+.accordion_div .headingClick_div{
+    height:2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,111,0,1) 0%, rgba(66,32,2,1) 88%, rgba(77,37,3,1) 98%);
+    display: flex;
+    justify-content: space-between;
+    justify-items: end;
+    align-items: center;
+    cursor: pointer;
+    opacity:0.8;
+}
+
+.accordion_div .content{
+    max-height: 12rem;
+    width:100%;
+    padding:10px 15px;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    background-color: rgb(43, 42, 42);
+}
+
+.content div:last-child{
+    text-align: right;
+}
+
+/* Below is mapping elements file css */
+.map{
+    padding-top: 4rem;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
 }

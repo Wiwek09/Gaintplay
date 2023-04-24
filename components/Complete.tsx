@@ -22,7 +22,7 @@ const Complete = (props: Props) => {
     <div  className={ `${hide? styles.hide : ""} ${styles.parent}`} >
       <div className={ !hide ? styles.main : styles.hide_main} >
        {data.map((el) =>{
-          return <Earnings el={el} key={el.data} />
+          return <Earnings el={el} key={el._id} />
        })}
       </div>
       <div className='' onClick={pressed} >
