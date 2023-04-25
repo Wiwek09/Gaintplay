@@ -11,6 +11,8 @@ import Heading_Section from './Body/HeadingSection/Heading_Section'
 import Box_Section from './Body/Box/Box_Section'
 import Box_last from './Body/Box-Last/Box_last'
 import Complete_Accordion from './Body/QuestionBox/Complete_Accordion'
+import User_Review from './Body/Reviews/User_Review'
+import Footer from './Footer/Footer'
 
 type Props = {}
 
@@ -202,6 +204,16 @@ const Body = (props: Props) => {
       <Complete_Accordion/>
    </div>
  </section>
+{/* Section {Black Background} */}
+ <section className={styles.review_section} >
+  <div className={styles.review} >
+    <User_Review/>
+  </div>
+ </section>
+{/* Section   */}
+<section className={styles.footer_section} >
+  <Footer/>
+</section>
 </div>
   )
 }

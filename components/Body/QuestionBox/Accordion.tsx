@@ -2,7 +2,6 @@ import React,{useState} from 'react'
 import styles from './style.module.css'
 import {IoIosArrowUp,IoIosArrowDown} from 'react-icons/Io'
 
-
 type Props = {item:data}
 
 type data = {

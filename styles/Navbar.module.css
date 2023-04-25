@@ -3,19 +3,18 @@
     height: 120px;
     min-height: 70px;
     z-index: 10;
-    max-width: 100vw;
+    /* max-width: 100vw; */
 }
 
-.hello{
+/* .hello{
     background-color: white;
-}
+} */
 
 .main{
     display: flex;
     padding-inline: 15rem;
     padding-top: 10px;
     justify-content: space-between;
-    
 }
 
 .nav img{
@@ -100,7 +99,6 @@
     cursor: pointer;
     font-size: large;
     padding: 10px;
-    
 }
 
 .btn_text{

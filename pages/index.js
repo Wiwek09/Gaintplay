@@ -5,6 +5,7 @@ import Complete from '../components/Complete'
 import Body from '../components/Body'
 import Footer from '../components/Footer/Footer'
 
+
 export default function Home() {
   return (
     <div className={styles.container}>  
@@ -14,7 +15,6 @@ export default function Home() {
        <Complete />
        </div>
        <Body/>
-       <Footer/>
     </div>
   )
 }
