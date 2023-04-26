@@ -15,6 +15,7 @@ export default function Home() {
        <Complete />
        </div>
        <Body/>
+       <Footer/>
     </div>
   )
 }

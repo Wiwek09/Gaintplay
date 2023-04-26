@@ -210,10 +210,6 @@ const Body = (props: Props) => {
     <User_Review/>
   </div>
  </section>
-{/* Section   */}
-<section className={styles.footer_section} >
-  <Footer/>
-</section>
 </div>
   )
 }

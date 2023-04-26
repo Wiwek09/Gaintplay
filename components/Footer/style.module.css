@@ -20,6 +20,7 @@
     padding-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
 }
 
 .links .left_div{
@@ -53,7 +54,7 @@
     border-radius: 15px;
 }
 
-.first{
+.list{
     display: flex;
     flex-direction: column;
     gap:8px;
@@ -64,9 +65,40 @@
     font-weight: 600
 }
 
-.first > div > .icon_text{
+.list > div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.list > div > .icon_text{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap:10px;
+}
+
+.main div:last-child{
+    text-align: center;
+}
+
+.main .copyright{
+    color:grey;
+    font-weight: 500;
+}
+
+.copyright p:last-child{
+    margin-top: -14px;
+}
+
+.main .copyright > p:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+}
+
+
+.main .copyright_logo{
+    font-size: 14px;
 }
