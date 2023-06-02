@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
-import {BiCoinStack} from 'react-icons/Bi'
-import {BsFillCalculatorFill} from 'react-icons/Bs'
-import {GiTrophy,GiAlliedStar} from 'react-icons/Gi'
+import {BiCoinStack} from 'react-icons/bi'
+import {BsFillCalculatorFill} from 'react-icons/bs'
+import {GiTrophy,GiAlliedStar} from 'react-icons/gi'
 import Image from 'next/image'
 
 type Props = {}

@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styles from './style.module.css'
-import {IoIosArrowUp,IoIosArrowDown} from 'react-icons/Io'
+import {IoIosArrowUp,IoIosArrowDown} from 'react-icons/io'
 
 type Props = {item:data}
 

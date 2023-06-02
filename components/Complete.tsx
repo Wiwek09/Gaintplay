@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {data} from '../data/earning_data'
 import styles from '../styles/Earnings.module.css'
 import Earnings from './Earnings'
-import {RiArrowUpSLine,RiArrowDownSLine} from 'react-icons/Ri'
+import {RiArrowUpSLine,RiArrowDownSLine} from 'react-icons/ri'
 
 type Props = {}
 
