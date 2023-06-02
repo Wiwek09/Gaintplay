@@ -22,9 +22,6 @@ const Footer = (props: Props) => {
           <div className={styles.line}></div>
           <div className={styles.links}>
             <div className={styles.left_div} >
-              <span>
-                <Image src='diagram.gif' alt='logo' />
-              </span>
               <div>
                 <a>GaintPlay</a>
                 <a>Download on Andriod App.</a>
