@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styles from '../styles/Body.module.css'
-import {BsPersonFill} from 'react-icons/Bs'
+import {BsPersonFill} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/Md'
 import {AiFillEye,AiFillEyeInvisible,AiFillWarning} from 'react-icons/Ai'
 import {RiLockPasswordFill} from 'react-icons/Ri'
