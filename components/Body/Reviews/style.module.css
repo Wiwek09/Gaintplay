@@ -40,37 +40,35 @@
     width: 8rem;
 }
 
+/* Review 2 */
+
 .review .review2{
-    position:relative;
+    /* position:relative; */
     display: flex;
     gap:8rem;
-    overflow: hidden;
-}
-
-.review .left_arrow{
-    height:2rem;
-    width:2rem;
-    position: absolute;
-    top:5rem;
-    left:2rem;
+    /* overflow: hidden; */
 }
 
 .review2 .review2_main{
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    /* gap: -5rem; */
+    /* overflow-x: scroll; */
 }
+
 
 /* Review */
 
-/* .top{
-    max-width:60rem;
+.top{
+    max-width:30%;
+    padding-top: 1rem;
+    display: grid;
     margin:auto;
-} */
+}
 
 .top .main_div{
-    max-height: 10rem;
-    max-width: 15rem;
+    /* max-height: 10rem; */
+    /* max-width: 10rem; */
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -80,12 +78,15 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    gap:7rem;
 }
 
 .top img{
     height:2rem;
     width: 8rem;
 }
+
+.top .info > p:first-child{
+    display: flex;
+}
+
 

@@ -12,7 +12,7 @@ const Box_last = ({heading,text,color}: Props) => {
       <p>{heading}</p>
       <p>{text}</p>
      {color.map((x) => {
-       return <div id={`${styles[x]}`} className={styles.position}  />
+       return <div id={`${styles[x]}`} className={styles.position} key={x}  />
       })} 
     </div>
   )

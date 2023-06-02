@@ -12,7 +12,7 @@ import Box_Section from './Body/Box/Box_Section'
 import Box_last from './Body/Box-Last/Box_last'
 import Complete_Accordion from './Body/QuestionBox/Complete_Accordion'
 import User_Review from './Body/Reviews/User_Review'
-import Footer from './Footer/Footer'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -49,7 +49,7 @@ const Body = (props: Props) => {
              <h2>Playing Games</h2>
              <p>Earn coins for simple tasks such as completing Offerwalls , Surveys , playing games, watching videos and more. Users already earned more than $100,000 USD on GaintPlay!</p>
              <div  > 
-             <Link className={styles.earn_main} href={"/earn"} >Start Earning</Link> 
+             <Link className={styles.earn_main} href={"/#"} >Start Earning</Link> 
              </div>
             </section>
             <section className={styles.section_2} >
@@ -151,13 +151,13 @@ const Body = (props: Props) => {
         </div>
         <div className={styles.logo_div}>
           <div className={styles.logo1} >
-            <img  src='/paypal-icon.svg' /> 
+            <Image  src='/paypal-icon.svg' alt='paypal' /> 
           </div>
           <div className={styles.logo2} >
-            <img src='/khalti.png' />
+            <Image src='/khalti.png' alt='khalti' />
           </div>
           <div className={styles.logo3} >
-            <img src='/mastercard.svg' />
+            <Image src='/mastercard.svg' alt='mastercard' />
           </div>
         </div>
     </div>
@@ -170,11 +170,11 @@ const Body = (props: Props) => {
         <div className={styles.box_div} >
            <Box_Section heading={"Do Task"} subtext1={"Fill in surveys,"}    subtext2={"play games and more"} number={"1"} buttontxt={"View    Offers"} color={'orange'} bgColor={'bgOrange'} />
            <div>
-           <img src='/lines_1.svg' />
+           <Image src='/lines_1.svg' alt='line' />
            </div>
            <Box_Section heading={"Earn Coins"} subtext1={"1000 coins = $1 USD"}    subtext2={"Get Rewarded for your time"} number={"2"} buttontxt=   {"Start Earning"} color={'green'} bgColor={'bgGreen'}  />
            <div>
-           <img src='/lines_2.svg' />
+           <Image src='/lines_2.svg' alt='line' />
            </div>
            <Box_Section heading={"Get Paid"} subtext1={"Reedeem your coins for    cash,"} subtext2={"khalti or bhukka"} number={"3"} buttontxt={"View    Cashout Options"} color={'blue'} bgColor={'bgBlue'}  />
 
@@ -186,11 +186,11 @@ const Body = (props: Props) => {
      <div className={styles.distance}></div>
 
      <div className={styles.box_last} >
-      <Box_last heading={"0h 25m 21s"} text={"Average Time until first cashout"} color={["orange","yellow","red"]}/>
+      <Box_last heading={"0h 25m 21s"} text={"Average Time until first cashout"} color={["orange","yellow","red"]} key={1}/>
       <div className={styles.box_gap} ></div>
-      <Box_last heading={"$2"} text={"Average earning per user"} color={["green1","green2","yellow"]} />
+      <Box_last heading={"$2"} text={"Average earning per user"} color={["green1","green2","yellow"]} key={2} />
       <div className={styles.box_gap} ></div>
-      <Box_last heading={"$102,690+"} text={"Total USD earned on Gaintplay"} color={["blue1","blue2","blue3"]} />
+      <Box_last heading={"$102,690+"} text={"Total USD earned on Gaintplay"} color={["blue1","blue2","blue3"]} key={3} />
      </div>
      <div className={styles.backcolor1} />
      <div className={styles.backcolor2} />

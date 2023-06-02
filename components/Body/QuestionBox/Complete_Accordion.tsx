@@ -10,7 +10,7 @@ const Complete_Accordion = (props: Props) => {
     <div>
       <section className={styles.map} >
         {data.map((item) =>{
-            return <Accordion item={item} /> 
+            return <Accordion item={item} key={item.id} /> 
         })}
       </section>
     </div>

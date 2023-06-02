@@ -3,6 +3,7 @@ import styles from '../styles/Navbar.module.css'
 import {BiCoinStack} from 'react-icons/Bi'
 import {BsFillCalculatorFill} from 'react-icons/Bs'
 import {GiTrophy,GiAlliedStar} from 'react-icons/Gi'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -12,7 +13,7 @@ const Navbar = (props: Props) => {
     <nav className={styles.nav} >
       <main className={styles.main} >
         <a className={styles.icon_container} href='#' >
-           <img
+           <Image
             src='diagram.gif' 
             alt="GaintPlay"  
            />

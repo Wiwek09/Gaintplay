@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style.module.css'
+import Image from 'next/image'
 
 type Props = {el:reviews}
 
@@ -17,12 +18,12 @@ const Review = ({el}: Props) => {
     <div className={styles.top}>
         <div className={styles.main_div} >
           <div className={styles.upper} >
-            <img src={`https://gaintplay.com/assets/images/stars-${image}`} />
+            <Image src={`https://gaintplay.com/assets/images/stars-${image}`} alt='users' />
             <span>{date}</span>
           </div>
-          </div>
+        </div>
            <p>{topic}</p>
-          <div>
+          <div className={styles.info} >
             <p>{heading}</p>
             <p>{username}</p>
           </div>

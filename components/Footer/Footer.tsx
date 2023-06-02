@@ -9,6 +9,7 @@ import {TfiHeadphoneAlt} from 'react-icons/Tfi'
 import {AiFillStar,AiOutlineCopyrightCircle} from 'react-icons/Ai'
 import {FaTelegramPlane} from 'react-icons/Fa'
 import {BsTwitter} from 'react-icons/Bs'
+import Image from 'next/image'
 
 
 
@@ -22,7 +23,7 @@ const Footer = (props: Props) => {
           <div className={styles.links}>
             <div className={styles.left_div} >
               <span>
-                <img src='diagram.gif' />
+                <Image src='diagram.gif' alt='logo' />
               </span>
               <div>
                 <a>GaintPlay</a>
@@ -72,6 +73,7 @@ const Footer = (props: Props) => {
           <div className={styles.copyright} >
             <p>GaintPlay LLC <span> <AiOutlineCopyrightCircle className={styles.copyright_logo} /></span> Copyright 2023</p>
             <p>All Rights Reserved</p>
+            <p>Designed By: <Link href={'#'} > Wiwek K.C.</Link></p>
           </div>
         </section>
     </div>

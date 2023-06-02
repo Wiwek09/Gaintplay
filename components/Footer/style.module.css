@@ -28,6 +28,11 @@
     gap:16px;
 }
 
+.links .left_div span > img{
+    height: 10px;
+    width: 10px;
+}
+
 .left_div div:last-child{
     display: flex;
     flex-direction: column;
@@ -98,7 +103,10 @@
     gap:4px;
 }
 
-
 .main .copyright_logo{
     font-size: 14px;
+}
+
+.copyright p:last-child a:hover{
+    color:rgb(228, 91, 0)   
 }
